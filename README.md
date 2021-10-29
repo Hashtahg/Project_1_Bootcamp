@@ -12,8 +12,8 @@ get a current value of the holdings of each security and the total portfolio.
 
 We do this by multiplying the yesterday close by the 100 shares, then summing up each holding value to get the total portfolio.
 
-value_i yest_close_i * shares_i = holding value of the security i
-total portfolio holding value is the sum of values of each holding value for each security i, namely: value_1 + value_2 + ... + value_5
+value_i = yest_close_i * shares_i = holding value of security i
+total portfolio holding value is the sum of each holding value for each security i, namely: value_1 + value_2 + ... + value_5
 
 Once we have this we run the Monte Carlo simulation assuming 20% weight in each security, and we give the 95% confidence interval
 of the low and high value of the portfolio.
