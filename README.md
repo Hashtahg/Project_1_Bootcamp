@@ -24,8 +24,15 @@ of the low and high value of the portfolio.
 
 The team is using python version 3.7.10 and is importing the following from the built-in libraries and from functions created within the team:
 
+import questionary
+import os
+import requests
+import json
 import pandas as pd
-from pathlib import Path
+from dotenv import load_dotenv
+import alpaca_trade_api as tradeapi
+from MCForecastTools import MCSimulation
+
 %matplotlib inline
 
 ---
