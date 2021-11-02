@@ -3,7 +3,7 @@
 This application will ask the user for their risk tolerence and prefered stock holding period, and will return a basket of equites suitable to their preferences.
 The application will be using Monte Carlo Simulations to give the user an idea of how their portfolio might look at the end of their holding period by showcasing a lower and upper bound prediction using a 95% confidence interval.
 
-The application will begin by asking the client their risk tolerance level. They can choose conservative, aggressive, or very aggressive. We'll label these as level 1, 2, and 3.  The next question will be what timeframe in years are they looking for us to forecast the potential 95% confidence interval for the low and high value of their portfolio.
+The application will begin by asking the client how much they are willing to invest in their portfolio. The application will then asl the user for their risk tolerance level. They can choose conservative, aggressive, or very aggressive. We'll label these as level 1, 2, and 3.  The last question for the user will be the timeframe in years they looking for us to forecast the potential 95% confidence interval for the low and high value of their portfolio.
 
 Once we have the above information we'll then have a basket of 5 tickers that we will run a Monte Carlo simulation on for the number of years the client specified.
 
