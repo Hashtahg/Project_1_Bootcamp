@@ -1,22 +1,19 @@
 # Portfolio Analysis Application
 
-This application will ask the user for their risk tolerence and prefered stock holding period, and will return a basket of equites suitable to their preferences.
-The application will be using Monte Carlo Simulations to give the user an idea of how their portfolio might look at the end of their holding period by showcasing a lower and upper bound prediction using a 95% confidence interval.
+This application will ask the user for their risk tolerence and amount they would like to invest, and we will return a basket of equities suitable to their preferences.  The application will be using Monte Carlo Simulation to give the user an idea of how their portfolio might look at the end of their holding period by showcasing a lower and upper bound prediction using a 95% confidence interval.
 
-The application will begin by asking the client how much they are willing to invest in their portfolio. The application will then asl the user for their risk tolerance level. They can choose conservative, aggressive, or very aggressive. We'll label these as level 1, 2, and 3.  The last question for the user will be the timeframe in years they looking for us to forecast the potential 95% confidence interval for the low and high value of their portfolio.
+The application will begin by asking the client how much they are willing to invest in their portfolio, with a $1mm minimum. The application will then ask the user for their risk tolerance level. They can choose conservative, aggressive, or very aggressive. We'll label these as level 1, 2, and 3.
 
-Once we have the above information we'll then have a basket of 5 tickers that we will run a Monte Carlo simulation on for the number of years the client specified.
+Once we have the above information we'll then have a basket of 5 tickers that we will run a Monte Carlo simulation on for three different time horizons: 5 years, 10 years, and 20 years.
 
-Before the Monte Carlo simulation we assume we have 100 shares of each ticker and pull in the yesterday closes to
-get a current value of the holdings of each security and the total portfolio.
-
-We do this by multiplying the yesterday close by the 100 shares, then summing up each holding value to get the total portfolio.
-
-value_i = yest_close_i * shares_i = holding value of security i
-total portfolio holding value is the sum of each holding value for each security i, namely: value_1 + value_2 + ... + value_5
+Before the Monte Carlo simulation we assume we have an equal amount invested in each ticker. So we divide the amount invested by five and buy as many shares as possible of each ticker and display to the client how many shares they own of each ticker based on yesterday's close.
 
 Once we have this we run the Monte Carlo simulation assuming 20% weight in each security, and we give the 95% confidence interval
-of the low and high value of the portfolio.
+of the low and high value of the portfolio.  As mentioned above we run this for all three time horizons.
+
+Finally, if the client confirms we will output a CSV file as a report that shows how much the client invested,
+the tickers that are in their portfolio and the number of shares they own, and the low and high values of the portfolio
+from the 95% confidence interval of each time horizon (5yrs, 10yrs,and 20yrs).
 
 ---
 
