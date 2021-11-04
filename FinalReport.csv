@@ -1,0 +1,10 @@
+Value of Portfolio,Value Per Share,Portfolio Tickers,Shares per Ticker
+$111111.00,$22222.20,JPM,130
+-,$22222.20,VTEB,407
+-,$22222.20,PZA,827
+-,$22222.20,BNDX,391
+-,$22222.20,GOOGL,8
+Holding Period,Lower Bound Values,Upper Bound Values,-
+5Year,$122252.93,$283533.8,-
+10Year,$154935.93,$547602.6,-
+20Year,$390648.01,$1844688.1,-

@@ -2,8 +2,8 @@ import csv
 from pathlib import Path
 
 #def writeToCSV(csvSavePath,dictionary1, dictionary2):
-def writeToCSV(fileName1, fileName2,dataframe1, dataframe2):
-#def writeToCSV(fileName1, dataframe1): for Chaim if he wants to combine it
+#def writeToCSV(fileName1, fileName2,dataframe1, dataframe2):
+def writeToCSV(fileName1, dataframe1): #for Chaim if he wants to combine it
 
     #header = ["Lender","Max Loan Amount", "Max LTV,Max DTI", "Min Credit Score", "Interest Rate"]
 
@@ -29,7 +29,7 @@ def writeToCSV(fileName1, fileName2,dataframe1, dataframe2):
         dataframe1.to_csv(fileName1, index=False)
         
         # created csv file with dataframe2
-        dataframe2.to_csv(fileName2, index=False)
+        #dataframe2.to_csv(fileName2, index=False)
         
         print("Reports have been saved. Have a nice day!")
 
