@@ -6,9 +6,9 @@ The application will ask the user for the amount they would like to invest, and 
 
 Each basket contains 5 equities, and the application will use a formula to assign weights for each of the equities in an attempt to produce the maximum amount of returns for our user.
 
-The application uses Monte Carlo Simulation's to give the user an idea of how their portfolio might look at the end of their holding period by showcasing a lower and upper bound prediction using a 95% confidence interval.
+The application uses Monte Carlo Simulations to give the user an idea of how their portfolio might look at the end of their holding period by showcasing a lower and upper bound prediction using a 95% confidence interval.
 
-Our Monte Carlo Simulation's run for three different time period's: 5 year's, 10 year's, and 20 year's.
+Our Monte Carlo Simulations run for three different time periods: 5 years, 10 years, and 20 years.
 
 With the results of our simulations, the application will output a csv file with all the user's information. This report will include the portfolio value, the equities in the portfolio, the amount of shares per equity, the value assigned to each equity, and the 3 Monte Carlo Simulations with their lower and upper bound prediction using a 95% confidence interval.
 
@@ -22,9 +22,13 @@ import questionary
 import os
 import requests
 import json
-import pandas as pd
+import sys
+import seaborn as sn
+import matplotlib.pyplot as plt
+import numpy as np
 from dotenv import load_dotenv
 import alpaca_trade_api as tradeapi
+from pandas_datareader import data as wb
 from MCForecastTools import MCSimulation
 %matplotlib inline
 
