@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 from pandas_datareader import data as wb
 import matplotlib.pyplot as plt
-%matplotlib inline
+#%matplotlib inline
 import seaborn as sn
 
 def efficient_frontier(assets):
@@ -77,6 +77,10 @@ def efficient_frontier(assets):
      # allocation of weights to each asset - calculation
     return weights
 
+
+if __name__ == "__main__":
+
+    efficient_frontier(['FB', 'AAPL', 'TSLA', 'RDS.A', 'GS'])
 
 
 
