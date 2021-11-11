@@ -47,7 +47,22 @@ webpage. Ensure the 'MCForecastTools.py' file, 'gitignore' file, and '.env' file
 The user will be asked to input a portfolio amount, and their risk tolerence. The user will be asked to choose a number from 1 to 3, which translates to conservative, moderate, and aggresive. The client is also free to change allocation percentages in the monte carlo simulation, the years we simulate, and even include more than 5 equities if they desire. 
 
 ---
+## FAQ's
 
+Q- What is Modern Portfolio Theory, and how is it maximizing my returns?
+    A- Modern Portfolio Theory is a risk-return model developed by Markowitz, and runs on the assumption that the investor wants to achieve the highest possible long-term returns without takeing any extreme level of short-term market risk. Beacause risk and returns are positively correlated, a higher risk  appetite is usually followed by higher returns. Returns from a 30 year treasure bond's do not compare to the returns of TSLA or AAPL. Essentially, you gotta swim with the sharks to get the pearl. Paddling with the ducks won't get you far.
+
+Q- What method are you using to pick your stocks? 
+    A- Our team of data analysts filter through hundreds of stocks for each interval of risk tolerence. They utilize different variables involving varience, beta, and standard deviation to finalize a list of their top 5 picks for each level of risk. This is the list of stocks that we recommend to our clients.
+    
+Q- Why did you specifically choose these three time horizons?
+    A- We want to give our client the choice to invest short-term, mid-term, and long-term, and we dont want to overwhelm our client with too many options. We also like the number 3.
+    
+
+    
+    
+    
+    
 ## Contributors
 
 
@@ -57,4 +72,4 @@ The contributors are Paul Lopez, Chaim Kriger, Bipasha Goswami, Briggs Lalor, an
 
 ## License
 No licenses required. Just get the consent of the contributors above and everything should be fine.
-Chaim would like a tip :)
+Chaim would like a tip :
