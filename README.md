@@ -44,7 +44,7 @@ The Portfolio Analysis Application leverages Python version 3.7.10 and Git versi
 
 To use the application, launch jupyter lab from the gitbash terminal and run the 'portfolio_analysis.ipynb' noteback from the 
 webpage. Ensure the 'MCForecastTools.py' file, 'gitignore' file, and '.env' files are in the directory where you run 'portfolio_analysis.ipynb'.
-The user will be asked to input a portfolio amount, and their risk tolerence. The user will be asked to choose a number from 1 to 3, which translates to conservative, moderate, and aggresive. The client is also free to change allocation percentages in the monte carlo simulation, the years we simulate, and even include more than 5 equities if they desire. 
+The user will be asked to input a portfolio amount, and their risk tolerence. The user will be asked to choose a number from 1 to 3, which translates to conservative, moderate, and aggressive. The client is also free to change allocation percentages in the monte carlo simulation, the years we simulate, and even include more than 5 equities if they desire. 
 
 ---
 ## FAQ's
